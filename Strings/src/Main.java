@@ -27,6 +27,7 @@ public class Main {
             System.out.println("Not Equal");
         }
 
+
         // String Concatenation
         String str1 = "Hello";
         String str2 = "World";
@@ -37,5 +38,50 @@ public class Main {
 
         int[] arr = {1, 2, 3};
         System.out.println(arr + " " + str1); // In case of non-primitive data types Java implicitly calls toString() method during concatenation
+
+
+        // Reverse of a string
+        String str3 = "Hello";
+        String reverse = " ";
+        for (int i = str3.length() - 1; i >= 0; i--) {
+            reverse += str3.charAt(i);
+        }
+        System.out.println(reverse); // olleH
+
+
+        // Strings vs char arrays
+        String str5 = "Gracious"; // Immutable, stored in String pool
+        char[] arr1 = {'G', 'r', 'a', 'c', 'i', 'o', 'u', 's'}; // Mutable, stored in Heap memory
+        System.out.println(str5); // Gracious
+        System.out.println(arr1); // Gracious
+
+        // Conversion
+        // String => char array
+        char[] arr2 = str5.toCharArray();
+        System.out.println(arr2); // Gracious
+
+        // array => String
+        String str6 = new String(arr1);
+        System.out.println(str6);
+
+
+        // stringBuilder class => used to create mutable string
+        StringBuilder sb = new StringBuilder("I like coding");
+
+        sb.append(" and drinking coffee");
+        System.out.println(sb);
+
+        sb.insert(13, ", gaming");
+        System.out.println(sb);
+
+        sb.replace(2, 6, "love");
+        System.out.println(sb);
+
+        sb.delete(13,21);
+        System.out.println(sb);
+
+        // How to convert a StringBuilder instance to a string
+        String str4 = sb.toString();
+        System.out.println(str4);
     }
 }
