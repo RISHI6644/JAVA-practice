@@ -13,7 +13,7 @@ public class Factorial {
             sum *= i;
             /* BigInteger temp = new BigInteger(i + "");
             sum = sum.multiply(temp); */
-        } 
+        }
         System.out.println(sum);
     }
 }
