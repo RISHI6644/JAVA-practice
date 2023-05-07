@@ -1,0 +1,32 @@
+What is Java ?
+=> Java is a general-purpose, high level, Object-Oriented programming language. It was developed by James Gosling
+    at Sun Microsystems in 1995.
+
+Principles of Java:
+There were 5 main goals in the creation of Java
+
+1. It must be simple, Object-Oriented, and familiar.
+2. It must be robust and secure.
+3. It must be architecture-neutral and portable.
+4. It must execute with high performance.
+5. It must be interpreted, threaded, and dynamic.
+
+Why is Java so popular ?
+=> platform independent
+=> Fundamentally Object-Oriented
+=> Easy to learn
+=> Versatile
+
+Use cases of Java
+1. Building Android Apps (Native Android apps)
+2. Java web applications
+3. Software tools (i.e. media players, anti-viruses, Acrobat reader and so on)
+4. Scientific Applications
+
+and many more.............
+
+How Java works ?
+1. Programmer writes the source code
+2. Source code is then compiled into bytecode
+3. Bytecode is executed over the VM(virtual machine)
+4. The program works over the machine
