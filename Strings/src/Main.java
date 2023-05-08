@@ -1,10 +1,25 @@
 public class Main {
     public static void main(String[] args) {
         String str = "Let's learn Strings!";
+
+        /* Strings in Java
+        * A String is a Non-primitive data type which defines a sequence of characters.
+        * Single line strings are defined with double quotes.
+        * Multiline strings are defined with triple doubled quotes.
+
+        */
+
         System.out.println(str);
         System.out.println(str.length());
         System.out.println(str.charAt(1));
         System.out.println("Let's Start!".length());
+
+        String hobby_list = """
+                                Reading
+                                Gaming
+                                Watching Movies
+                            """;
+        System.out.println(hobby_list);
 
         String s1 = "abc";
         String s2 = "abc";
