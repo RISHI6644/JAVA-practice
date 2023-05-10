@@ -44,6 +44,18 @@ public class Main {
             System.out.println(y);
         } while (y > 0);
 
+        /* for-each loop: It is also called as 'enhanced for loop'. It was introduced in Java 5. It is one of the
+            alternative approaches that are used for traversing the iterable. As the name suggests, it is mainly used
+            to iterate over each of the iterable elements one by one.
+         */
+
+        int[] arr = {1, 2, 3, 4, 5};
+
+        for (int num : arr) {
+            System.out.print(num + " ");
+        }
+        System.out.println();
+
         /* break statement is used to terminate a loop in which it is enclosed. The program resumes control at the next
             statement following the loop
          */
