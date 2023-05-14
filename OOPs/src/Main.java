@@ -38,9 +38,16 @@ public class Main {
 
 /* What is a class ?
   => A class is a blueprint for the object.
+     It is the logical construct of an object.
 
   What is an object ?
   => An object is an entity that has a state and some behaviour.
+     It is the physical reality of classes. Also, it occupies space
+     in memory.
+     An object has:
+     -> properties(Variables) / Identity
+     -> state(value)
+     -> method(functionalities) / Behaviour
  */
 
 class Car {

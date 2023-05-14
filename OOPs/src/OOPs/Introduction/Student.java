@@ -1,0 +1,112 @@
+package OOPs.Introduction;
+
+import java.util.Arrays;
+
+public class Student {
+    // Instance variables declaration
+    int rno;
+    String name;
+    float marks;
+
+    /* We need a way to add the values of the above properties
+        object by object means we need one word to access every
+        object.
+        And the word is 'this' keyword. It is used to replace the
+        reference variable in constructor.
+        this keyword also helps to call a constructor from another constructor.
+     */
+
+    Student() {
+        this.rno = 01;
+        this.name = "Name";
+        this.marks = 90.0f;
+
+        // To call a constructor from another constructor
+        // Internally: new Student(13, "Default person", 95.0f);
+        // this(13, "Default person", 95.0f);
+    }
+
+    // Constructor Overloading
+    // Student Aaron = new Student(32, "Aaron Paul", 69.5);
+    // Here, this will be replaced with Aaron
+    Student(int rno, String name, float marks) { // int roll, String naam, float numbers
+        this.rno = rno; // rno = roll;
+        this.name = name; // name = naam;
+        this.marks = marks; // narks = numbers;
+    }
+
+    Student(Student other) {
+        this.rno = other.rno;
+        this.name = other.name;
+        this.marks = other.marks;
+    }
+
+    void greeting() {
+        System.out.println("Hello, My name is " + this.name);
+    }
+}
+
+class StudentMain {
+    public static void main(String[] args) {
+        // Store 5 roll numbers
+        int[] roll_numbers = new int[5];
+
+        // Store 5 names
+        String[] names = new String[5];
+
+        // Data of 5 students
+        int[] rno = new int[5];
+        String[] name = new String[5];
+        float[] marks = new float[5];
+
+        Student[] students = new Student[5];
+        System.out.println(Arrays.toString(students));
+
+        Student rishi; // Reference Variable(Stored in stack memory) declaration
+        // System.out.println(rishi.rno);
+        // To create objects, we have to use 'new' keyword
+
+        /* new keyword: It dynamically allocates memory at runtime
+            and returns a reference variable to it.
+         */
+
+        /* Dynamic Memory Allocation: consider the following line:
+            Student s1 = new Student(); here everything in left hand
+            side happens at compile time(When the program check for
+            errors and convert it to bytecode) and right hand side is
+             happens at the run time(When the program will be running).
+             That is when the allocation of dynamic memory takes place.
+         */
+        rishi = new Student();
+        // Student rishi = new Student();
+        rishi.rno = 25;
+        rishi.name = "Rishikesh Das";
+        rishi.marks = 87.5F;
+
+        // rishi.salary = 75000; // It can be done on python
+        
+        System.out.println(rishi);
+        System.out.println(rishi.rno);
+        System.out.println(rishi.name);
+
+        rishi.greeting();
+
+        Student rahul = new Student(30, "KL Rahul", 85.8f);
+
+        System.out.println(rahul.rno);
+        System.out.println(rahul.marks);
+
+        rahul.greeting();
+
+        Student random = new Student(rishi);
+
+        System.out.println(random.rno);
+        System.out.println(random.marks);
+
+        Student one = new Student();
+        Student two = one;
+        one.name = "Random Name";
+
+        System.out.println(two.name); // Both reference variables are referring to the same object.
+    }
+}
