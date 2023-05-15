@@ -108,5 +108,19 @@ class StudentMain {
         one.name = "Random Name";
 
         System.out.println(two.name); // Both reference variables are referring to the same object.
+
+        /* final keyword used to prevent content from modifying.
+            final int increase = 2; // Always initialize while declaring.
+
+            final Student rishi = new Student("Rishikesh Das");
+            rishi.name = "New name"; // So, we can modify in case of objects
+
+            But we cannot do the following:
+            rishi = new Student("new object"); // When a non-primitive is final, we cannot reassign it
+         */
+
+        final int bonus = 2;
+        // bonus = 3; // It can't be done
+        
     }
 }
