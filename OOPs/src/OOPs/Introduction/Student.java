@@ -1,4 +1,16 @@
+/* packages: These are known as the container/boxes for classes. They are used to keep the class name in compartments.
+              In simple words, packages are just like folders. Packages are stored as hierarchy in manner.
+ */
+
 package OOPs.Introduction;
+
+/* import statement: when import keyword is used, all the packages/classes/interfaces becomes visible to a program
+    under a package.
+    Syntax: package1.package2.myclass
+
+    Here, package1 is in top level and package2 is in subordinate level and here only myclass from package2 wil be
+    imported.
+ */
 
 import java.util.Arrays;
 
@@ -47,6 +59,15 @@ public class Student {
 }
 
 class StudentMain {
+
+    /* Why main method is declared as static ?
+        Firstly, think about static. static used to make the property/function visible without crating an object of that
+        class.
+        main function is the very first thing that runs when we run a java program. It is responsible to run a program.
+        So, main is mandatory. Since it is the first function to run a program and the program needs to access its
+        elements without creating any objects. That is why main function is declared as static.
+     */
+
     public static void main(String[] args) {
         // Store 5 roll numbers
         int[] roll_numbers = new int[5];
