@@ -15,6 +15,8 @@ public class Human {
 
     static void message() {
         System.out.println("Hello!!!");
+        // System.out.println(this.age); // We cannot use this keyword here since it is referring to the non-static
+                                        // element
     }
 
     public Human(int age, String name, int salary, boolean married) {
