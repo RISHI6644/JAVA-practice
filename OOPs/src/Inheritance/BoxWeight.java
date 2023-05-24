@@ -44,4 +44,9 @@ public class BoxWeight extends Box{
 
         // super(l, h, w); // superclass properties should be initialized before child class's properties.
     }
+
+    public BoxWeight(double side, double weight) {
+        super(side);
+        this.weight = weight;
+    }
 }

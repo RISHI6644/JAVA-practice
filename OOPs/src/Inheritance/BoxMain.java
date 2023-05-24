@@ -35,5 +35,11 @@ public class BoxMain {
 
         BoxWeight old = new BoxWeight(box4);
         System.out.println(old.weight);
+
+        BoxPrice box5 = new BoxPrice(5, 8, 200);
+        System.out.println(box5.cost);
+
+        BoxColor box6 = new BoxColor(5, 5.10, 2.5, 78, 4);
+        System.out.println(box6.clr);
     }
 }
