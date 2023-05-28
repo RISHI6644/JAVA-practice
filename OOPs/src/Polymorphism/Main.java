@@ -27,6 +27,15 @@ public class Main {
 
                           Method Overriding: When a child class has a same named method of a parent class, but the
                           method body is different.
+
+                      How Java determines which method to run ?
+                      => The method to run is determined by Java using "Dynamic method dispatch" technique and that is
+                      why it is known as dynamic polymorphism.
+
+                      Dynamic method dispatch: It is a mechanism by which a call to an overridden method is resolved at
+                      runtime rather than compile-time. It is also known as "Late Binding".
+
+                      We cannot override a method that is declared as 'final'
          */
     }
 }
