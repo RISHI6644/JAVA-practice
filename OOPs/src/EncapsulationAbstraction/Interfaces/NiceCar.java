@@ -2,6 +2,7 @@ package EncapsulationAbstraction.Interfaces;
 
 public class NiceCar {
     private Engine engine;
+    private Media player = new CdPlayer();
 
     public NiceCar() {
         engine = new PowerEngine();
@@ -20,6 +21,14 @@ public class NiceCar {
     }
 
     public void startMusic() {
-        
+        player.start();
+    }
+
+    public void stopMusic() {
+        player.stop();
+    }
+
+    public void upgradeEngine() {
+        this.engine = new ElectricEngine();
     }
 }

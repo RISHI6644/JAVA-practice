@@ -26,5 +26,7 @@ public class Main {
             8. A Java abstract class can have class members like private, protected, etc. But members of a Java
                interface are public by default.
          */
+
+        // Two classes which are unrelated to each other can implement the same interface
     }
 }
