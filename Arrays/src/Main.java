@@ -8,7 +8,15 @@ public class Main {
          */
 
         // Given the marks of students in a classroom, calculate the average marks. Assume class size to be 10.
-        int[] marks = new int[10];
+        int[] marks = new int[10]; // Here, int defines the data types, marks is the reference variable and the part of
+                                   // right hand side is creating the object in heap memory which happens at runtime
+                                   // (Dynamic Memory Allocation: Assigning the memory space during the execution/run time)
+
+        /* Internally how does it work ?
+            => So basically there is a stack memory, in where all the function calls and reference variables would go.
+               And an actual array object (which is stored in the heap memory) will be pointed by the reference variable.
+
+         */
         marks[0] = 67;
         System.out.println(marks[0]);
 
