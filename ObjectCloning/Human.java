@@ -17,6 +17,7 @@ public class Human implements Cloneable{ // Since we will clone Human class's ob
 
     @Override
     public Object clone() throws CloneNotSupportedException {
+        // This is shallow copy
         return super.clone();
     }
 }
