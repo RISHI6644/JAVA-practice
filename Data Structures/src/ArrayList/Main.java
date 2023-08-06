@@ -19,6 +19,20 @@ public class Main {
                  whenever we want.
 
             Syntax: ArrayList<dataType> var = new ArrayList<dataType>();
+
+            ex: Arraylist<String> list = new ArrayList<>();
+            Elements in an ArrayList are actually objects. In the example above, we created
+            elements (objects) of type "String". Remember that a String in Java is an object
+            (not a primitive type). To use other types specifically primitive ones such as
+            int, you must specify an equivalent wrapper class: Integer. For other primitive
+            types, use: Boolean for boolean, Character for char, Double for double, etc.
+
+            Internal working of ArrayList:
+            i) size is fixed initially
+            ii) When the ArrayList gets filled up by the elements:
+                -> It creates a new ArrayList by making the size double
+                -> Old elements are copied to the new one
+                -> Old one is deleted
          */
 
         ArrayList<Integer> list = new ArrayList<>(); // Here Integer is the wrapper class of the primitive data type int
@@ -39,11 +53,16 @@ public class Main {
         }
 
         // get item from any index
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < list2.size(); i++) {
             System.out.println(list2.get(i)); // pass index here; list2[i] will not work here
         }
 
         // Printing the ArrayList
         System.out.println(list2);
+
+        // Print using for-each loop
+        for (int n:list2) {
+            System.out.println(n);
+        }
     }
 }

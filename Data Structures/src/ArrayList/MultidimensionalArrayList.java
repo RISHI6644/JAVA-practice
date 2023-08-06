@@ -8,7 +8,7 @@ public class MultidimensionalArrayList {
         Scanner sc = new Scanner(System.in);
         ArrayList<ArrayList<Integer>> list = new ArrayList<>();
 
-        // initializing each ArrayList
+        // initializing outer ArrayList
         for (int i = 0; i < 3; i++) {
             list.add(new ArrayList<>());
         }
@@ -22,5 +22,5 @@ public class MultidimensionalArrayList {
 
         // Printing
         System.out.println(list);
+        }
     }
-}
