@@ -28,8 +28,7 @@ public class Main {
 
         for (int i = 0; i < arr.length; i++) {
             // Check for element at every index for matching the target
-            int element = arr[i];
-            if (element == target) {
+            if (arr[i] == target) {
                 return i;
             }
         }

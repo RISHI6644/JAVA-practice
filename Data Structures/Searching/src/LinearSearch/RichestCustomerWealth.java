@@ -23,7 +23,7 @@ public class RichestCustomerWealth {
             }
 
             // Now we have the sum of accounts wealth of a person
-            // Checkong with overall answer
+            // Checking with the current max
             if (sum > max) {
                 max = sum;
             }

@@ -14,8 +14,7 @@ public class SearchInRange {
         }
 
         for (int i = start; i <= end; i++) {
-            int element = arr[i];
-            if (element == target) {
+            if (arr[i] == target) {
                 return i;
             }
         }

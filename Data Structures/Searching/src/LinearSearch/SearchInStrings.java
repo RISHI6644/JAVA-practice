@@ -8,6 +8,8 @@ public class SearchInStrings {
         char target = 'i';
         System.out.println(searchString(name, target));
 
+        // char[] arr = name.toCharArray(); Converted the String to a char array
+
         System.out.println(Arrays.toString(name.toCharArray()));
     }
 
@@ -15,6 +17,13 @@ public class SearchInStrings {
         if (str.length() == 0) {
             return false;
         }
+
+        // Working with the char[] array
+//        for (int i = 0; i < arr.length; i++) { // You have to take arr as parameter instead the str
+//            if (arr[i] == target) {
+//                return true;
+//            }
+//        }
 
         // By using for-each loop
         for (char ch:str.toCharArray()) {

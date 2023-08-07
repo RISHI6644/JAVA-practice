@@ -12,7 +12,7 @@ package LinearSearch;
               we can do the following steps:
               i) Count the number of digits by using a while loop where we can divide
                   the number by 10 until it becomes 0.
-              ii) Convert the number into a String and then consider its length
+              or, ii) Convert the number into a String and then consider its length
  */
 
 public class EvenNumberOfDigits {
