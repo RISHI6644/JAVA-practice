@@ -8,7 +8,7 @@ public class CustomGenericArrayList<T> {
     private int size = 0;
 
     public CustomGenericArrayList() {
-        data = new Object[default_size];
+        this.data = new Object[default_size];
     }
 
     public void add(T num) {

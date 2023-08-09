@@ -78,14 +78,14 @@ public class Main {
                     int mid = start + (end - start) / 2;
              */
 
-            if (target < arr[middle]) {
+            if (arr[middle] == target) {
+                return middle;
+            }
+            else if (target < arr[middle]) {
                 end = middle - 1;
             }
             else if (target > arr[middle]) {
                 start = middle + 1;
-            }
-            else {
-                return middle;
             }
         }
         return -1;
