@@ -29,6 +29,11 @@ public class CeilingOfNumber {
     }
     
     public static int ceilingSearch(int[] arr, int target) {
+        // if the target is greater than the greatest element in the array then
+        if (target > arr[arr.length - 1]) {
+            return -1;
+        }
+
         int start = 0;
         int end = arr.length - 1;
 
@@ -45,6 +50,6 @@ public class CeilingOfNumber {
                 start = middle + 1;
             }
         }
-        return arr[start];
+        return arr[start]; // When while loop violated (Start >= end)
     }
 }

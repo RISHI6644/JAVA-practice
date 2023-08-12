@@ -1,6 +1,6 @@
 package BinarySearch;
 
-/* Question: Given an array = {2, 3, 5, 9, 14, 16, 18} and a target value 16.
+/* Question: Given an array = {2, 3, 5, 9, 14, 16, 18} and a target value 15.
     Find the Floor (greatest element in array which is less or equal to
     the target) of the target.
 
@@ -41,6 +41,6 @@ public class FloorOfNumber {
                 start = middle + 1;
             }
         }
-        return arr[end];
+        return arr[end]; // When while loop violated (Start >= end)
     }
 }
