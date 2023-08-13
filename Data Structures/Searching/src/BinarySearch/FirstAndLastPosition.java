@@ -31,6 +31,7 @@ public class FirstAndLastPosition {
     // This function just returns the index value of target
     public static int searchIndex(int[] arr, int target, boolean findStartIndex) {
         int index = -1;
+
         int start = 0;
         int end = arr.length - 1;
 
@@ -56,3 +57,9 @@ public class FirstAndLastPosition {
         return index;
     }
 }
+
+/* Time Complexity: Since here binary search is running twice, so it will take,
+    (logN + logN) = logN (instead of 2logN as constant does not matter in time
+    complexity since it determines a relationship between the size of the input
+    and the time) amount of time.
+ */
