@@ -14,6 +14,7 @@ package BinarySearch;
 // if (arr[mid] < arr[mid + 1]) => We will be in the ascending part of the array
 // and so start = mid + 1
 // When will the loop break ? => While start and end both will point to the same element.
+
 public class MountainArray {
     public static void main(String[] args) {
         int[] arr = {1, 2, 3, 4, 9, 8, 7, 6, 5};
