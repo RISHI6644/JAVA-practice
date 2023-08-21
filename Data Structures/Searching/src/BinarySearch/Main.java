@@ -84,7 +84,7 @@ public class Main {
             else if (target < arr[middle]) {
                 end = middle - 1;
             }
-            else if (target > arr[middle]) {
+            else {
                 start = middle + 1;
             }
         }
