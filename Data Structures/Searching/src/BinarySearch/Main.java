@@ -54,6 +54,12 @@ public class Main {
         int out = binarySearch(arr, target);
 
         System.out.println(out);
+
+        int[] arr2 = {8, 10, 15, 17, 20, 29};
+        int target2 = 20;
+        int out2 = recursiveBinarySearch(arr2, target2, 0, arr2.length - 1);
+
+        System.out.println(out2);
     }
 
     public static int binarySearch(int[] arr, int target) {
@@ -89,5 +95,22 @@ public class Main {
             }
         }
         return -1;
+    }
+
+    public static int recursiveBinarySearch(int[] arr, int target, int start, int end) {
+        if (start > end) {
+            return -1;
+        }
+
+        int middle = (start + end) / 2;
+
+        if (arr[middle] == target) {
+            return middle;
+        } else if (target < arr[middle]) {
+            return recursiveBinarySearch(arr, target, start, middle - 1);
+        }
+        else {
+            return recursiveBinarySearch(arr, target, middle + 1, end);
+        }
     }
 }
