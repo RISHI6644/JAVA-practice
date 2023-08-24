@@ -58,6 +58,12 @@ public class RotatedSortedArray {
         int pivot2 = search(arr2, target2);
 
         System.out.println(pivot2);
+
+        int[] arr3 = {15, 16, 19, 20, 25, 1, 3, 4, 5, 7, 10, 14};
+        int target3 = 5;
+        int pivot3 = search(arr3, target3);
+
+        System.out.println(pivot3);
     }
 
     public static int search(int[] arr, int target) {
