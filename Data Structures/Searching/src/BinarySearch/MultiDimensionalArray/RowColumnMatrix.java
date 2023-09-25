@@ -1,6 +1,6 @@
 package BinarySearch.MultiDimensionalArray;
 
-/* Question: Consider the following matrix sorted in Row-wise & Column-wise order
+/* Question: Consider the following matrix sorted in a Row-wise & Column-wise order
     mat A = [[10, 20, 30, 40],
             [15, 25, 35, 45],
             [28, 29, 37, 49],
