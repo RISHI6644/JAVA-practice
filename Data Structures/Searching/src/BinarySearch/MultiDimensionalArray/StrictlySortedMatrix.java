@@ -31,7 +31,7 @@ public class StrictlySortedMatrix {
                        {5, 6, 7, 8},
                        {9, 10, 11, 12},
                        {13, 14, 15, 16}};
-        System.out.println(Arrays.toString(searchElement(arr, 11)));
+        System.out.println(Arrays.toString(searchElement(arr, 16)));
     }
 
     // Search in the particular row that is provided between the columns
