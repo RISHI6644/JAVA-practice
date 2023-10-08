@@ -53,6 +53,11 @@ public class Main {
         bubbleSort(arr);
 
         System.out.println(Arrays.toString(arr));
+
+        int[] arr2 = {-39, 7, -5, 18};
+        bubbleSort(arr2);
+
+        System.out.println(Arrays.toString(arr2));
     }
 
     public static void bubbleSort(int[] arr) {
